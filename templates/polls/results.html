@@ -14,10 +14,11 @@
         </li>
         {% endfor %}
     </ul>
-    <a href="{% url 'polls:index.html' %}" class="btn btn-secondary">
+
+    <a href="{% url 'polls:index' %}" class="btn btn-secondary">
         Back To Polls
     </a>
-    <a href="{% url 'polls:detail.html' %}" class="btn btn-dark">
+    <a href="{% url 'polls:detail' question.id %}" class="btn btn-dark">
         Vote again?
     </a>
 {% endblock %}
